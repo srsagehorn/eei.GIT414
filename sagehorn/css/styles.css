@@ -1,0 +1,73 @@
+/* --------------GLOBAL-------------- */
+body {
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* --------------HEADER-------------- */
+header,
+h1 {
+  font-family: aviano-flare, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+}
+
+.title {
+  display: inline;
+  text-align: right;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(20, 35, 255);
+}
+
+/* --------------MAIN-------------- */
+.bannerpic {
+  display: inline-block;
+}
+/* --------------FOOTER-------------- */
+footer {
+  text-align: center;
+}
+/* --------------MOBILE-------------- */
+@media screen and (max-width: 480px) {
+  /* GLOBAL */
+  body {
+    font-size: 12pt;
+  }
+  /* HEADER */
+  header {
+    font-size: 20pt;
+  }
+  #logo {
+    height: 50px;
+  }
+  nav li a {
+    font-size: 14pt;
+    color: black;
+  }
+  /* MAIN */
+  .bannerpic {
+    height: 300px;
+    margin: 0px;
+  }
+  .type {
+    margin: 10px;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 9pt;
+  }
+}
