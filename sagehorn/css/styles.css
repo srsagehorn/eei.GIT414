@@ -70,4 +70,8 @@ footer {
   footer p {
     font-size: 9pt;
   }
+
+  small {
+    font-size: 7pt;
+  }
 }
