@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Contact page for Engineering Evaluations Site, includes contact form -->
     <meta charset="UTF-8">
+    <meta name = "Shannon Sagehorn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | EEI</title>
-    <!-- Contact page for Engineering Evaluations Site, includes contact form -->
+    <link rel="stylesheet" href="https://use.typekit.net/ris7awt.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <img src="../pics/logo.png" alt="EEI logo">
-        </a>
-        <p class = "title">Engineering Evaluations Inc.</p>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="services.html">Services</a></li>
-            </ul>
-        </nav>
+            <a href="index.html" id = "logo">
+                </a>
+                <p id = "title">Engineering Evaluations Inc.</p>
+            <ul id = "links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a class = "active" href="contact.html">Contact</a></li>
+          </ul>
+            <!-- Hamburger Menu-->
+            <button id="hamburger">
+              <i class="fa fa-bars light"></i>
+            </button>
+          </nav>
     </header>
     <main>
         <form>
             <h1>Contact Us</h1>
-            <label for="name">name</label>
+            <label for="name">Name</label>
             <input id = "name" type="text">
             <br>
             <label for="email">Email</label>
@@ -46,5 +54,6 @@
             St. Louis, MO 63126</p>
         <small>For Educational Purposes Only</small>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
