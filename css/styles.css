@@ -1,6 +1,6 @@
 /* --------------GLOBAL-------------- */
 body {
-  font-family: objektiv-mk1, sans-serif;
+  font-family: nobel, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -18,8 +18,7 @@ body {
   margin-right: auto;
 }
 /* --------------HEADER-------------- */
-header,
-h1 {
+header {
   font-family: clarendon-text-pro, serif;
   font-weight: 400;
   font-style: normal;
@@ -29,16 +28,18 @@ header {
   width: 100%;
 }
 
-.title {
+#title {
   display: inline;
   text-align: right;
+  color: black;
 }
 
 nav li {
   list-style: none;
 }
 
-nav li a {
+nav li a,
+nav a {
   text-decoration: none;
 }
 
@@ -58,7 +59,7 @@ nav {
   color: black;
 }
 
-nav a {
+nav li a {
   color: white;
   text-decoration: none;
   display: block;
@@ -99,9 +100,9 @@ nav a {
 
 .child {
   background-color: rgb(243, 243, 243);
-  padding: 20px;
-  border-left: rgb(206, 206, 206) 6px solid;
-  border-right: rgb(206, 206, 206) 6px solid;
+  border-left: rgb(206, 206, 206) 8px solid;
+  border-right: rgb(206, 206, 206) 8px solid;
+  border-bottom: rgb(206, 206, 206) 8px solid;
 }
 
 form {
@@ -111,10 +112,11 @@ form {
 
 input,
 textarea {
+  background-color: rgb(206, 206, 206);
   border: none;
-  border-bottom: 1px navy solid;
-  background-color: transparent;
   width: 100%;
+  /* this padding will be standard on all pages */
+  padding: 3px;
 }
 textarea {
   width: 100%;
@@ -130,6 +132,12 @@ textarea {
 .fa-chevron-down,
 .fa-chevron-up {
   float: right;
+}
+
+#outside,
+#near {
+  display: inline;
+  width: 10px;
 }
 /* --------------FOOTER-------------- */
 footer {
@@ -174,12 +182,19 @@ footer {
     font-size: 17px;
   }
   /* MAIN */
-  main {
-    margin: 8px;
-  }
+
   .bannerpic {
-    height: 300px;
+    height: 100px;
+    width: 123px;
     margin: 0px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .bannerpic img {
+      margin: -10px 0px 0px -180px;
+  }
+
   }
   p {
     margin: 0;
@@ -192,6 +207,9 @@ footer {
     position: relative;
     top: 5px;
   }
+  .child {
+    padding: 20px;
+  }
   .type {
     margin: 15px;
     margin-bottom: 100px;
@@ -203,6 +221,10 @@ footer {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+  input,
+  textarea {
+    margin-bottom: 20px;
   }
   #submit {
     font-weight: 100;
