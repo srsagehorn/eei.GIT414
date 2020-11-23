@@ -4,16 +4,25 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.bold {
+  font-weight: 600;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* --------------HEADER-------------- */
 header,
 h1 {
   font-family: clarendon-text-pro, serif;
   font-weight: 400;
   font-style: normal;
-}
-
-h1 {
-  text-align: center;
 }
 
 header {
@@ -39,14 +48,13 @@ nav li a {
   font: inherit;
   cursor: pointer;
 }
-/* .active {
+.active {
   color: rgb(20, 35, 255);
-} */
+}
 
 nav {
   overflow: hidden;
   position: relative;
-  background-color: gold;
   color: black;
 }
 
@@ -57,18 +65,13 @@ nav a {
 }
 
 #hamburger {
-  background: blue;
+  background: white;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 40px;
-}
-
-/* Add a grey background color on mouse-over */
-nav a:hover {
-  background-color: #ddd;
   color: black;
 }
 /* --------------MAIN-------------- */
@@ -77,13 +80,16 @@ nav a:hover {
 }
 
 .heading {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  border-top: 1px solid black;
   font-weight: 600;
+  background-color: rgb(206, 206, 206);
 }
 
 .first {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top: none;
 }
 
 .last {
@@ -94,11 +100,45 @@ nav a:hover {
 .child {
   background-color: rgb(243, 243, 243);
   padding: 20px;
+  border-left: rgb(206, 206, 206) 6px solid;
+  border-right: rgb(206, 206, 206) 6px solid;
 }
 
+form {
+  border: 3px navy solid;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px navy solid;
+  background-color: transparent;
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+#submit {
+  background: transparent;
+  border: none;
+  color: navy;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  float: right;
+}
 /* --------------FOOTER-------------- */
 footer {
   text-align: center;
+  background-color: navy;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 /* --------------MOBILE-------------- */
 
@@ -113,11 +153,11 @@ footer {
     font-size: 20pt;
   }
   nav li a {
-    font-size: 14pt;
+    font-size: 12pt;
     color: black;
   }
   #title {
-    font-size: 20px;
+    font-size: 5vw;
     margin: 13px;
   }
   #links,
@@ -147,8 +187,26 @@ footer {
   .heading {
     padding: 10px;
   }
+  .fa-chevron-down,
+  .fa-chevron-up {
+    position: relative;
+    top: 5px;
+  }
   .type {
     margin: 15px;
+    margin-bottom: 100px;
+  }
+  form {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #submit {
+    font-weight: 100;
+    font-size: 20px;
   }
   /* FOOTER */
   footer p {
