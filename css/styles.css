@@ -260,6 +260,8 @@ textarea {
   background: transparent;
   border: none;
   color: navy;
+  width: 100%;
+  text-align: right;
 }
 
 .fa-chevron-down,
