@@ -176,13 +176,10 @@ footer {
   #hamburger {
     font-size: 24px;
   }
-
-  nav a {
-    padding: 14px 16px;
-    font-size: 17px;
-  }
   /* MAIN */
-
+  h1 {
+    font-size: 20px;
+  }
   .bannerpic {
     height: 100px;
     width: 123px;
