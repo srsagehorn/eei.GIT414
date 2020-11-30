@@ -3,7 +3,7 @@
 <head>
     <!-- Contact page for Engineering Evaluations Site, includes contact form -->
     <meta charset="UTF-8">
-    <meta name = "Shannon Sagehorn">
+    <meta name="author" content="Shannon Sagehorn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | EEI</title>
     <link rel="stylesheet" href="https://use.typekit.net/ris7awt.css">
@@ -16,8 +16,10 @@
     <header>
         <nav>
             <a href="../index.html" id = "logo">
+                <img src="../pics/logo.png" alt="">
                 </a>
-                <p id = "title">Engineering Evaluations Inc.</p>
+                <a href="../index.html">
+                <p id = "title">Engineering Evaluations Inc.</p></a>
             <ul id = "links">
               <li><a href="../index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
@@ -32,20 +34,21 @@
     <main>
         <form>
             <h1 class = "textcenter">Contact Us</h1>
-            <input palceholder = "Name" id = "name" type="text">
+            <label class = "bold" for="name">Name</label>
+            <input id = "name" type="text">
             <br>
-            <label class = "bold" for="email">Email </label>
+            <label class = "spacing bold" for="email">Email </label>
             <input id = "email" type="text">
-            <p class = "bold">Are you;</p>
+            <p class = "spacing bold">Are you;</p>
             <input type="radio" id="near" name="near" value="St. Louis">
             <label for="near">Near St. Louis</label><br>
             <input type="radio" id="outside" name="outside" value="Outside">
             <label for="outside">Outside of St. Louis</label><br>
-            <label class = "bold" for="message">Message</label>
+            <label class = "spacing bold" for="message">Message</label>
             <br>
             <textarea name="message" id="message" rows="10"></textarea>
             <br>
-            <button id = "submit" class = "bold"type = "submit">SUBMIT</button>
+            <button id = "submit" class = "spacing bold" type = "submit">SUBMIT</button>
         </form>
     </main>
     <footer>
