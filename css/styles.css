@@ -282,7 +282,91 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+} /* --------------TABLET-------------- */
+
+@media only screen and (max-width: 1023px) {
+  /* GLOBAL */
+  body {
+    font-size: 12pt;
+    margin: 0;
+  }
+  /* HEADER */
+  header {
+    font-size: 20pt;
+  }
+  nav li a {
+    font-size: 12pt;
+    color: black;
+  }
+  #title {
+    font-size: 5vw;
+  }
+  #links {
+    display: none;
+  }
+  #logo {
+    height: 40px;
+    margin: 10px;
+  }
+  #hamburger {
+    font-size: 32px;
+  }
+  /* MAIN */
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bannerpic {
+    height: 185px;
+    width: 254px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  p {
+    margin: 0;
+  }
+  .heading {
+    padding: 10px;
+  }
+  .fa-chevron-down,
+  .fa-chevron-up {
+    position: relative;
+    top: 5px;
+  }
+  .child {
+    padding: 20px;
+  }
+  .type {
+    margin: 35px 100px;
+    margin-bottom: 100px;
+  }
+  form {
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input,
+  textarea {
+    margin-bottom: 25px;
+  }
+  #submit {
+    font-weight: 100;
+    font-size: 25px;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 10pt;
+  }
+
+  small {
+    font-size: 7pt;
+  }
 }
+
 /* --------------MOBILE-------------- */
 
 @media only screen and (max-width: 600px) {
