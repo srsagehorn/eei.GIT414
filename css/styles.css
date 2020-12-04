@@ -188,6 +188,10 @@ nav a {
   padding-top: 30px;
 }
 
+#checkbox {
+  display: none;
+}
+
 #hamburger {
   border: none;
   font: inherit;
@@ -334,20 +338,27 @@ small {
   header {
     font-size: 20pt;
   }
-  nav ul,
-  nav li {
+  #checkbox:checked ~ nav ul {
     display: block;
   }
+
+  ul > li {
+    width: 100%;
+  }
   nav li a {
-    font-size: 12pt;
+    font-size: 14pt;
     color: black;
     padding-left: 0px;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 10px;
   }
   #title {
     font-size: 5vw;
   }
   #links {
     display: none;
+    float: none;
   }
   #logo {
     height: 40px;
@@ -436,11 +447,6 @@ small {
   #logo {
     display: none;
   }
-
-  #hamburger:target #links {
-    display: block;
-  }
-
   #hamburger {
     font-size: 20px;
     padding-top: 7px;
