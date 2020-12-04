@@ -1,17 +1,4 @@
-  var collapsed = true
   var services = []
-
-  $("#hamburger").on("click", function () {
-      console.log("hi")
-    if (collapsed === true) {
-        $("#links").show()
-        collapsed = false
-    }
-    else {
-        $("#links").hide()
-        collapsed = true
-    }
-  })
 
   for (let i = 0 ; i < 20 ; i++) {
     services.push(true)
