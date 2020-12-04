@@ -128,13 +128,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* --------------GLOBAL-------------- */
 body {
   font-family: nobel, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.25;
+  font-size: 12pt;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .bold {
@@ -154,16 +156,22 @@ header {
   font-family: clarendon-text-pro, serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20pt;
 }
 
 header {
   width: 100%;
+}
+#logo {
+  height: 60px;
+  margin: 10px;
 }
 
 #title {
   display: inline;
   text-align: right;
   color: black;
+  font-size: 3vw;
 }
 
 nav li {
@@ -173,6 +181,8 @@ nav li {
 nav li a,
 nav a {
   text-decoration: none;
+  font-size: 12pt;
+  color: black;
 }
 
 #hamburger {
@@ -180,6 +190,11 @@ nav a {
   border: none;
   font: inherit;
   cursor: pointer;
+  font-size: 32px;
+}
+
+#links li a {
+  color: black;
 }
 .active {
   color: rgb(20, 35, 255);
@@ -200,24 +215,21 @@ nav li a {
 }
 
 #hamburger {
-  background: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  color: black;
+  display: none;
 }
 /* --------------MAIN-------------- */
-.bannerpic {
-  display: inline-block;
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .heading {
-  /* border: 1px solid blue; */
   border-top: 1px solid black;
   font-weight: 600;
   background-color: rgb(206, 206, 206);
+  padding: 20px;
+  font-size: 20px;
 }
 
 .first {
@@ -236,11 +248,18 @@ nav li a {
   border-left: rgb(206, 206, 206) 8px solid;
   border-right: rgb(206, 206, 206) 8px solid;
   border-bottom: rgb(206, 206, 206) 8px solid;
+  padding: 20px;
 }
 
 form {
   border: 3px navy solid;
   border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input,
@@ -248,8 +267,8 @@ textarea {
   background-color: rgb(206, 206, 206);
   border: none;
   width: 100%;
-  /* this padding will be standard on all pages */
   padding: 3px;
+  margin-bottom: 25px;
 }
 textarea {
   width: 100%;
@@ -262,11 +281,20 @@ textarea {
   color: navy;
   width: 100%;
   text-align: right;
+  font-weight: 100;
+  font-size: 25px;
 }
 
 .fa-chevron-down,
 .fa-chevron-up {
   float: right;
+  position: relative;
+  top: 5px;
+}
+
+.type {
+  margin: 35px 300px;
+  margin-bottom: 120px;
 }
 
 #outside,
@@ -282,7 +310,17 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-} /* --------------TABLET-------------- */
+}
+
+footer p {
+  font-size: 10pt;
+}
+
+small {
+  font-size: 7pt;
+}
+
+/* --------------TABLET-------------- */
 
 @media only screen and (max-width: 1023px) {
   /* GLOBAL */
@@ -310,18 +348,18 @@ footer {
   }
   #hamburger {
     font-size: 32px;
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    color: black;
   }
   /* MAIN */
   h1 {
     font-size: 30px;
     margin-bottom: 20px;
-  }
-  .bannerpic {
-    height: 185px;
-    width: 254px;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
   }
   p {
     margin: 0;
@@ -395,6 +433,10 @@ footer {
     display: none;
   }
 
+  #hamburger:target #links {
+    display: block;
+  }
+
   #hamburger {
     font-size: 24px;
   }
@@ -402,22 +444,12 @@ footer {
   h1 {
     font-size: 20px;
   }
-  .bannerpic {
-    height: 100px;
-    width: 123px;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .bannerpic img {
-    margin: -10px 0px 0px -180px;
-  }
   p {
     margin: 0;
   }
   .heading {
     padding: 10px;
+    font-size: 16px;
   }
   .fa-chevron-down,
   .fa-chevron-up {
