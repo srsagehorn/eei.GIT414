@@ -169,32 +169,35 @@ header {
 
 #title {
   display: inline;
-  text-align: right;
   color: black;
   font-size: 3vw;
 }
 
+nav ul,
 nav li {
   list-style: none;
+  display: inline-block;
 }
 
 nav li a,
 nav a {
   text-decoration: none;
-  font-size: 12pt;
+  font-size: 14pt;
   color: black;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 #hamburger {
-  color: white;
   border: none;
   font: inherit;
   cursor: pointer;
   font-size: 32px;
 }
 
-#links li a {
+#links {
   color: black;
+  float: right;
 }
 .active {
   color: rgb(20, 35, 255);
@@ -207,7 +210,6 @@ nav {
 }
 
 nav li a {
-  color: white;
   text-decoration: none;
   display: block;
   margin-top: 10px;
@@ -332,9 +334,14 @@ small {
   header {
     font-size: 20pt;
   }
+  nav ul,
+  nav li {
+    display: block;
+  }
   nav li a {
     font-size: 12pt;
     color: black;
+    padding-left: 0px;
   }
   #title {
     font-size: 5vw;
@@ -347,8 +354,9 @@ small {
     margin: 10px;
   }
   #hamburger {
-    font-size: 32px;
-    background: white;
+    background-color: white;
+    font-size: 28px;
+    padding-top: 20px;
     display: block;
     position: absolute;
     right: 0;
@@ -424,10 +432,6 @@ small {
   #title {
     font-size: 5vw;
   }
-
-  nav a {
-    margin: 15px;
-  }
   #links,
   #logo {
     display: none;
@@ -438,7 +442,8 @@ small {
   }
 
   #hamburger {
-    font-size: 24px;
+    font-size: 20px;
+    padding-top: 7px;
   }
   /* MAIN */
   h1 {
